@@ -49,7 +49,7 @@ func (h *TODOHandler) Delete(ctx context.Context, req *model.DeleteTODORequest) 
 
 func (h *TODOHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	ctx := r.Context()
-
+	
 	switch r.Method {
 	case http.MethodPost:
 		var req model.CreateTODORequest
